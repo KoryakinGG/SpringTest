@@ -1,6 +1,7 @@
-package ru.geekbrains.koryakin.lesson2;
+package ru.geekbrains.koryakin.lesson2.repository;
 
 import org.springframework.stereotype.Component;
+import ru.geekbrains.koryakin.lesson2.model.Product;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
@@ -14,27 +15,19 @@ public class ProductRepository {
     @PostConstruct
     public void init () {
         this.products = new ArrayList<>();
-        products.add(new Product(1L, "Banana", 50));
-        products.add(new Product(2L, "Lemon", 100));
-        products.add(new Product(3L, "Tomato", 150));
+        this.products.add(new Product(1L, "Banana", 50));
+        this.products.add(new Product(2L, "Lemon", 100));
+        this.products.add(new Product(3L, "Tomato", 150));
     }
 
     public List<Product> getAllProducts() {
         return Collections.unmodifiableList(products);
     }
 
-    public void addProduct(Long id, String title, int cost) {
-        products.add(new Product(id, title, cost));
+    public Product addProduct(Product product) {
+        products.add(product);
+        return product;
     }
-
-    public void getProductById(Long id) {
-        for (int i = 1; i < products.size(); i++) {
-            if (id == i) {
-                System.out.println(products.get(i));
-            }
-        }
-    }
-
 
     public Product findById(Long id ) {
         for (Product p : products) {
