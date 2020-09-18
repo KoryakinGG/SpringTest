@@ -2,8 +2,9 @@ package ru.geekbrains.koryakin.Lesson3;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
-import javax.security.auth.login.Configuration;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -11,9 +12,10 @@ import java.util.stream.Collectors;
 
 public class PrepareDataApp {
     public static void forcePrepareData () {
+        System.out.println("Старт конфигурации");
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .builSessionFactory();
+                .buildSessionFactory();
 
         Session session = null;
 

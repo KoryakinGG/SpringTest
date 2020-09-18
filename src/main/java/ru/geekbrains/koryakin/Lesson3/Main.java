@@ -2,8 +2,7 @@ package ru.geekbrains.koryakin.Lesson3;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-
-import javax.security.auth.login.Configuration;
+import org.hibernate.cfg.Configuration;
 
 
 public class Main {
@@ -11,10 +10,9 @@ public class Main {
         PrepareDataApp.forcePrepareData();
 
         Long maxId = null;
-
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .builSessionFactory();
+                .buildSessionFactory();
 
         Session session = null;
 
@@ -24,11 +22,11 @@ public class Main {
         session.beginTransaction();
         Buyer buyer = session.get(Buyer.class, 1L);
 
-        System.out.println("Удаляем по Id");
-        session = factory.getCurrentSession();
-        session.beginTransaction();
-        maxId = session.createQuery("SELECT MAX(s.id) FROM SimppleItem s", Long.class).getSingleResult();
-        session.delete(session.get(Buyer.class, maxId));
-        session.getTransaction().commit();
+//        System.out.println("Удаляем по Id");
+//        session = factory.getCurrentSession();
+//        session.beginTransaction();
+//        maxId = session.createQuery("SELECT MAX(s.id) FROM SimppleItem s", Long.class).getSingleResult();
+//        session.delete(session.get(Buyer.class, maxId));
+//        session.getTransaction().commit();
     }
 }
