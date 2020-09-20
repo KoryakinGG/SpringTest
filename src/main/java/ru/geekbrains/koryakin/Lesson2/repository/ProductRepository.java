@@ -1,7 +1,7 @@
-package ru.geekbrains.koryakin.lesson2.repository;
+package ru.geekbrains.koryakin.Lesson2.repository;
 
 import org.springframework.stereotype.Component;
-import ru.geekbrains.koryakin.lesson2.model.Product;
+import ru.geekbrains.koryakin.Lesson2.model.Product;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;

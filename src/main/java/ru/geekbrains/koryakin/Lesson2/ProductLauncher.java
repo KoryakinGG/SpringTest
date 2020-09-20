@@ -1,4 +1,4 @@
-package ru.geekbrains.koryakin.lesson2;
+package ru.geekbrains.koryakin.Lesson2;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;

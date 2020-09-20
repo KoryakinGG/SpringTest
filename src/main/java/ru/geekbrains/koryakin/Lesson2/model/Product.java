@@ -1,4 +1,4 @@
-package ru.geekbrains.koryakin.lesson2.model;
+package ru.geekbrains.koryakin.Lesson2.model;
 
 public class Product {
     private Long id;

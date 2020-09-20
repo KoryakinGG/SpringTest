@@ -1,9 +1,9 @@
-package ru.geekbrains.koryakin.lesson2.services;
+package ru.geekbrains.koryakin.Lesson2.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.geekbrains.koryakin.lesson2.model.Product;
-import ru.geekbrains.koryakin.lesson2.repository.ProductRepository;
+import ru.geekbrains.koryakin.Lesson2.model.Product;
+import ru.geekbrains.koryakin.Lesson2.repository.ProductRepository;
 
 import java.util.List;
 
