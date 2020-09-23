@@ -1,4 +1,4 @@
-package ru.geekbrains.entity;
+package ru.geekbrains.koryakin.Lesson5.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

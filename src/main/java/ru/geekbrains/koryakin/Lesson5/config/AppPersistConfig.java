@@ -1,4 +1,4 @@
-package ru.geekbrains.config;
+package ru.geekbrains.koryakin.Lesson5.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

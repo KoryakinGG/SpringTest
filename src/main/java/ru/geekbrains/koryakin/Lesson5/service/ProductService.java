@@ -1,12 +1,12 @@
-package ru.geekbrains.service;
+package ru.geekbrains.koryakin.Lesson5.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.geekbrains.entity.Product;
-import ru.geekbrains.repository.ProductRepository;
+import ru.geekbrains.koryakin.Lesson5.entity.Product;
+import ru.geekbrains.koryakin.Lesson5.repository.ProductRepository;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

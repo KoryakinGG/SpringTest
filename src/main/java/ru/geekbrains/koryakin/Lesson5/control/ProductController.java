@@ -1,4 +1,4 @@
-package ru.geekbrains.control;
+package ru.geekbrains.koryakin.Lesson5.control;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -6,8 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.entity.Product;
-import ru.geekbrains.service.ProductService;
+import ru.geekbrains.koryakin.Lesson5.entity.Product;
+import ru.geekbrains.koryakin.Lesson5.service.ProductService;
 
 import javax.validation.Valid;
 import java.math.BigDecimal;

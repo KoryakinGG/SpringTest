@@ -1,4 +1,4 @@
-package ru.geekbrains.control;
+package ru.geekbrains.koryakin.Lesson5.control;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
