@@ -8,7 +8,10 @@
     <groupId>ru.geekbrains.koryakin.Lesson4</groupId>
     <artifactId>lesson4</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <modules>
+        <module>lesson6</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
