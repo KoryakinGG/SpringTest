@@ -7,7 +7,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:mydatabase;
+    url: jdbc:h2:mem:mydatabase;MODE=PostgreSQL
     username: geek
     password: geek
   jpa:
