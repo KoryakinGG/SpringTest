@@ -20,6 +20,7 @@ import ru.geekbrains.repository.UserRepository;
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class SecurityConfiguration {
 
+
     @Bean
     public UserDetailsService userDetailsService(UserRepository userRepository) {
         return new UserAuthService(userRepository);

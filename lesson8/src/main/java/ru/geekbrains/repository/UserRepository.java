@@ -9,6 +9,7 @@ import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
+
     Optional<User> findUserByUsername(String userName);
 
     Page<User> findAll(Pageable pageable);

@@ -8,6 +8,7 @@ import java.util.Set;
 
 public class UserRepr {
 
+
     private Long id;
 
     @NotEmpty

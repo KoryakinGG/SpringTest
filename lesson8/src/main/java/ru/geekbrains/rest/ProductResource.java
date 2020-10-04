@@ -16,6 +16,7 @@ import java.util.List;
 @RestController
 public class ProductResource {
 
+
     private final ProductService productService;
 
     @Autowired

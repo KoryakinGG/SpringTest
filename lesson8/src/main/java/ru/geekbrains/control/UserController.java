@@ -37,8 +37,8 @@ public class UserController {
     public String allUsers(@RequestParam(value = "page") Optional<Integer> page,
                            @RequestParam(value = "limit") Optional<Integer> limit,
                            Model model) {
-        model.addAttribute("activePage", "Users");
-        model.addAttribute("userPage", userService.findAll(
+         model.addAttribute("activePage", "Users");
+         model.addAttribute("userPage", userService.findAll(
                 PageRequest.of(page.orElse(1) - 1, limit.orElse(5))
         ));
         model.addAttribute("users", userService.findAll());

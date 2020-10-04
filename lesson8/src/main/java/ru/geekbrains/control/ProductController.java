@@ -30,8 +30,8 @@ public class ProductController {
                              @RequestParam(value = "page") Optional<Integer> page,
                              @RequestParam(value = "limit") Optional<Integer> limit,
                              Model model) {
-        //добавляем атрибут активной страницы со значением страницы каталога
-        //см. в header.html
+         //добавляем атрибут активной страницы со значением страницы каталога
+         //см. в header.html
         model.addAttribute("activePage", "Products");
         //устанавливаем атрибут для пагинации см. в pagination.html
         model.addAttribute("productPage", productService.findAllByAgeBetween(

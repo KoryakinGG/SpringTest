@@ -2,7 +2,7 @@ package ru.geekbrains.exception;
 
 public class ProductErrorResponse {
 
-    private int status;
+     private int status;
     private String message;
     private long timestamp;
 
